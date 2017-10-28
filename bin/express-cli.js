@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var detect = require('feature-detect-es6')
 var ejs = require('ejs')
 var fs = require('fs')
 var mkdirp = require('mkdirp')
@@ -8,7 +9,6 @@ var program = require('commander')
 var readline = require('readline')
 var sortedObject = require('sorted-object')
 var util = require('util')
-var detect = require('feature-detect-es6')
 
 var MODE_0666 = parseInt('0666', 8)
 var MODE_0755 = parseInt('0755', 8)
